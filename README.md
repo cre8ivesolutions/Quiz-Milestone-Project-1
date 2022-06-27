@@ -39,3 +39,6 @@ The game should have a Readme.md file in the GitHub repository that describes th
 Make persistent scores in your browser's localStorage
 
 Add interesting music or sound effects to your game
+
+## Reference site
+https://www.triviaplaza.com/computer-general-quizzes/
