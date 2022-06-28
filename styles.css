@@ -1,0 +1,61 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    display: flexbox;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    outline: .5em dotted yellow;
+    margin: 1em;
+    padding: 1em;
+    
+}
+header{
+    outline:auto;
+    text-align: center;
+}
+main{
+    outline: auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#quizContainer{
+    min-height: 200vh;
+    outline: 1em solid orange;
+}
+#question{
+    font-size: 1em;
+    padding: .5em;
+    outline: auto;
+    
+    
+    
+} 
+#answerContainer{
+    outline: 1em solid blue;
+}
+#answer1, #answer2, #answer3, #answer4{
+    outline: .5em dotted lightblue;
+    
+    
+    
+}
+#scoreContainer {
+    margin: 1em;
+    padding: 1em;
+    outline: 1em solid darkred;
+    
+}
+#score {
+    outline: .5em solid red;
+}
+#totalQuestions{
+    outline: .5em dotted red;
+
+}
+.dim{
+    opacity: 0.1555;
+  }

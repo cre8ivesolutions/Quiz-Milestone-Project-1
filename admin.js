@@ -3,6 +3,7 @@
 //display the question in the question div
 //display the answers in the answers div
 // style the page
+// create a file for the questions and answers
 // link the questions and answers
 //add a hover listener for the answers to change the color
 // add a hover listener for the 
@@ -18,5 +19,6 @@
 //BONUS
 // ask their name at the beginning and add it to the end
 //add  "good job<name>"
+//add a fun font family from Google
 // add a photo to each question
 //add a button to share their score online at the end
