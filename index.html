@@ -8,36 +8,42 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- name the game -->
-    <header>
-        <h1>Front End Development Trivia</h1>
-        <h2>Words of encouragement placeholder!</h2>
-        <h3>START BUTTON PLACEHOLDER</h3>
-    </header>
-    <!-- create a div for the quiz -->
-    <main>
-        <div1 ID ="quizContianer">
-            <!-- create a div for the question -->
-            <div id=questionContainer>
-                <div id=question>Question Placeholder</div>
-            </div>
-            <!-- create a flexbox div for the answers -->
-            <div id="answerContainer">Answer Container Placeholder
-                
-                <div id="answer1">Answer 1 Placeholder?</div>
-                <div id="answer2">Answer 2 Placeholder?</div>
-                <div id="answer3">Answer 3 Placeholder?</div>
-                <div id="answer4">Answer 4 Placeholder?</div>
-            </div>
+    <div2 id="wrapper">
+        <div3 id="backgroundImage">
+            <!-- name the game -->
+            <header>
+                <h1>Front End Development Trivia</h1>
+            </header>
+            <button id="startButton"> START </button>
+            <!-- create a div for the quiz -->
+            <main>
+                <div1 ID ="quizContainer" class="container">
+                    <!-- create a div for the question -->
+                    <div id=questionContainer>
+                        <div id=question>The question will go here. 123456 how big will this get? dfsrgdtaewrgftar lkjh, lkjhlkuh.</div>
+                    </div>
+                    <hr>
+                    <!-- create a flexbox div for the answers -->
+                    <div id="answerContainer" class="container">
+                        <div id="answer1" class="answer"><button>Answer 1 Placeholder? how big can this container get? lkasjhdg;luiaygiuhy;h;kj u iuahy;liuh; iu</button></div>
+                        <div id="answer2"class="answer"><button>Answer 2 Placeholder?</button></div>
+                        <div id="answer3" class="answer"><button>Answer 3 Placeholder?</button></div>
+                        <div id="answer4" class="answer"><button>Answer 4 Placeholder?</button></div>
+                    </div>
+                </div1>
+            </main>
+            <div id="encouragement">Words of encouragement</div>
             <!-- create a space for the running score and win/los -->
-            <div id="scoreContainer">
-                <div id="score"></div>
-                <div id="totalQuestions"></div>       
-            </div>
-        </div1>
-    </main>
-    </div>
-    <script src='./admin.js'></script>
-    
+            <aside id="scoreContainer" class="container">
+                <!-- <div> -->
+                    <div id="score">##</div>
+                    <div id="totalQuestions">10</div>       
+                    <!-- </div> -->
+                </aside>
+                <footer>flashy stuff goes here</footer>
+                <!-- </div> -->
+                <script src='./admin.js'></script>
+        </div3>
+    </div2>
 </body>
 </html>

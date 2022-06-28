@@ -9,6 +9,7 @@
 // add a hover listener for the 
 // add the click listener for the answer choice
 //add the logic for increasing/decreasing the counter when the answer is chosen
+// "onload" in the html body
 // make the counter increase when a correct answer is given 
 // add a timer to the game
 // display the time it took to finish on the last screen

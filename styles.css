@@ -1,61 +1,108 @@
 body {
     font-family:'Courier New', Courier, monospace;
-    display: flexbox;
-    align-items: center;
-    margin: 1em;
-    padding: 1em;
-    outline: .5em dotted yellow;
-    margin: 1em;
-    padding: 1em;
-    
-}
-header{
-    outline:auto;
+    display: flex;
+    justify-content: center;
+    margin: .25em;
+    padding: .25em;
     text-align: center;
+    font-size: small;
+    /* outline: .5em dotted yellow; */
 }
+/* #backgroundImage{
+    /* background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+    opacity: 50%;
+    position: absolute;
+    /* z-index: .5; */ */ */
+
+#wrapper {
+    max-height: 98vh;
+}
+header{   
+    text-size-adjust: 25%;
+}
+
 main{
     outline: auto;
     align-items: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    margin-top: 1.25em;
 }
 #quizContainer{
-    min-height: 200vh;
-    outline: 1em solid orange;
+    min-height: 40vh;
+    width: 80w;
+    /* outline:.5em dotted orange; */
+}
+#questionContainer, #answerContainer, #scoreContainer {
+    width: 75vw;
+}
+div {
+    padding: .5em;
+    margin: .5em;
 }
 #question{
     font-size: 1em;
-    padding: .5em;
-    outline: auto;
-    
-    
-    
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgba(173, 216, 230, 0.801);
+    /* outline: .5em solid purple; */
 } 
-#answerContainer{
-    outline: 1em solid blue;
+#startButton {
+    background-color: green;
+    border-radius: 95%;
+    outline: none;
+    border: none;
+    font-size: x-large;
+    font-weight: bold;
+    min-width: 25vw;
+    min-height: 8vh;
 }
-#answer1, #answer2, #answer3, #answer4{
-    outline: .5em dotted lightblue;
-    
-    
-    
+.answer{
+    background-color: lightblue;
+    flex-direction: row;
+    border-radius: 90%;
+    /* outline: .5em solid darkred; */
 }
-#scoreContainer {
-    margin: 1em;
-    padding: 1em;
-    outline: 1em solid darkred;
-    
+.answer button {
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
-#score {
-    outline: .5em solid red;
+/* .answer :hover {
+    background-color: rgb(122, 122, 255);
+} this isnt working */
+#encouragement {
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
 }
-#totalQuestions{
-    outline: .5em dotted red;
+aside {
+    display: flex;
+    justify-content: center;
 
+    width: 45vw;
+    font-size:2em;
+    margin: .1em;
+    padding: .1em;
 }
-.dim{
-    opacity: 0.1555;
-  }
+#score, #totalQuestions{
+    /* outline: .25em solid red; */
+    max-width: 20vw;
+    background-color: rgb(173, 216, 230);
+    font-weight: bold;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    width: 90vw;
+}
+/* .dim{
+    opacity: 1.25;
+  } */
