@@ -49,6 +49,13 @@ div {
     min-width: 25vw;
     min-height: 8vh;
     color:white;
+    animation-name: startUp;
+    /* animation-duration: 1.5s; */
+    animation-iteration-count: infinite;
+}
+@keyframes startUp {
+    from {background-color: transparent;}
+    to {background-color: #ffb227;}
 }
 .answer button {
     font-weight: bold;
@@ -59,14 +66,10 @@ div {
     padding: .75em;
     width: 75vw;
 }
-#startButton :hover {
-   background-color: #ffcb6d;
-   }
 .answer :hover {
     background-color: rgb(122, 122, 255);
     /* opacity: .75; */
 } 
-/* this isnt working */
 #encouragement {
     text-align: center;
     font-weight: bold;
@@ -82,9 +85,12 @@ aside {
 }
 #score, #totalQuestions{
     max-width: 20vw;
+    min-width: 8vw;
     background-color:#134f98;
     color: white;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .1;
 }
 footer {
     text-align: center;

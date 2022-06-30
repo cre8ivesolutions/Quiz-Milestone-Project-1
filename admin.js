@@ -1,4 +1,45 @@
-// make a start button
+//When the page loads, only show the start button
+function hide (element){
+    let hidden = element.style.display = 'none';
+    return element;
+}
+function hideStartButton(){
+    const hideStart = document.getElementById('startButton');
+    hideStart.addEventListener('click', hide)
+}
+const displayQuestionText = () => {
+    let displayQuestion = document.getElementById('question');
+    displayQuestion.innerHTML = 'question test text';
+}
+const displayAnswerText = () => {
+    let displayAnswer = document.getElementById('answer1');
+    displayAnswer = 'answer test text';
+    
+}
+const displayScore = () => {
+    let runningScore = document.getElementById('score');
+    runningScore.innerHTML = " 0";
+}
+const displayTotal = () => {
+    let numberOfQuestions = document.getElementById('totalQuestions');
+    numberOfQuestions.innerHTML = 10;
+}
+displayTotal()
+displayScore()
+displayAnswerText()
+displayQuestionText()
+
+
+// function hide (element){
+//     quiz.style.display = 'none';
+
+//     document.querySelector().
+// }
+// async function showContent (){
+//     document.getElementById('startButton').addEventListener('click',)
+// }
+
+// when you click start, the first question will load
 // make a number button for the questions
 //display the question in the question div
 //display the answers in the answers div
