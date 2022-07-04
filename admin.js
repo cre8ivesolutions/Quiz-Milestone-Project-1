@@ -3,31 +3,52 @@ function hide (element){
     let hidden = element.style.display = 'none';
     return element;
 }
+
 function hideStartButton(){
-    const hideStart = document.getElementById('startButton');
+    let hideStart = document.getElementById('startButton');
     hideStart.addEventListener('click', hide)
 }
-const displayQuestionText = () => {
-    let displayQuestion = document.getElementById('question');
-    displayQuestion.innerHTML = 'question test text';
-}
-const displayAnswerText = () => {
+// let displayQuestionText = () => {
+//     let displayQuestion = document.getElementById('question');
+//     displayQuestion.innerHTML = qAndA.question;
+// }
+let displayAnswerText = () => {
     let displayAnswer = document.getElementById('answer1');
     displayAnswer = 'answer test text';
     
 }
-const displayScore = () => {
+let displayScore = () => {
     let runningScore = document.getElementById('score');
     runningScore.innerHTML = " 0";
 }
-const displayTotal = () => {
+let displayTotal = () => {
     let numberOfQuestions = document.getElementById('totalQuestions');
     numberOfQuestions.innerHTML = 10;
 }
+
+//test code below//
+let displayQandA = () => {
+    forEach(question, answer1, answer2, answer3, answer4);{
+    for (let i=0; i<listOfQuestions.length; i++){
+        let displayQuestions = qAndA.question[i];
+        }
+}
+}
+console.log(displayQandA)
+// function startTrivia () => {
+//     hideStartButton();
+//     forEach(question, answer1, answer2, answer3, answer4){
+//     for (let i=0; i<listOfQuestions.length; i++){
+//         let displayQuestions = listOfQuestions.question[i];
+//         }
+//     }
+// }
+
 displayTotal()
 displayScore()
 displayAnswerText()
-displayQuestionText()
+// displayQuestionText()
+// startTrivia()
 
 
 // function hide (element){
