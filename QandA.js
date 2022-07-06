@@ -1,17 +1,14 @@
-let qAndA = [
+// let qAndA = [
 
-    [question = "What data type is most useful for holding data in text form?",
-    answer1 = 'array',
-    answer2 = 'object',
-    answer3 = 'string',
-    answer4 = 'const'],
+//     question = "What data type is most useful for holding data in text form?"
+//     answer = ['array','object','string','const'],
 
-    [question= "this is the second question?", 
-    answer1= 'this is the second answer',
-    answer2= "this is also a second answer",
-    answer3= "this is also a second answer, the correct one",
-    answer4= "this is a second answer",],
-    ]
+//     [question= "this is the second question?", 
+//     answer = ['this is the second answer',
+//     "this is also a second answer",
+//     "this is also a second answer, the correct one",
+//     "this is a second answer",],
+//     ]
    
 
     

@@ -1,19 +1,19 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    display: flex;
+    display: flexbox;
     justify-content: center;
+    align-items: center;
     margin: .25em;
     padding: .25em;
     text-align: center;
-    font-size: small;
     color: #134f98;
-    /* outline: .5em dotted yellow; */
+    max-height: 100vh;
 }
-#wrapper {
-    max-height: 98vh;
+.hide {
+    display: none;
 }
-header{   
-    text-size-adjust: 25%;
+.show {
+    display: contents;
 }
 main{
     align-items: center;
@@ -30,11 +30,15 @@ width: 80w;
     width: 75vw;
 }
 div {
-    padding: .5em;
-    margin: .5em;
+    /* padding: .5em;
+    margin: .5em; */
 }
 .container, button, div {
     border-radius: 1em;
+    min-width: 25vw;
+    min-height: 8vh;
+    padding: .5em;
+    margin: .5em;
 }
 #question{
     font-weight: bold;
@@ -44,20 +48,20 @@ div {
 #startButton {
     background-color:#ffb227;
     border: none;
-    font-size: x-large;
+    font-size: 3rem;
     font-weight: bold;
     min-width: 25vw;
-    min-height: 8vh;
-    color:white;
+    min-height: 25vh;
+    color:#134f98;
     animation-name: startUp;
-    /* animation-duration: 1.5s; */
+    /* animation-duration: 1.75s; */
     animation-iteration-count: infinite;
 }
 @keyframes startUp {
     from {background-color: transparent;}
     to {background-color: #ffb227;}
 }
-.answer button {
+.answer button, button {
     font-weight: bold;
     font-size: medium;
     border: none;

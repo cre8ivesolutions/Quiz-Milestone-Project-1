@@ -8,37 +8,36 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div id="wrapper">
-        <!-- name the game -->
-        <header>
-            <h1>Front End Development Trivia</h1>
-        </header>
-        <button id="startButton"> START </button>
-        <!-- create a div for the quiz -->
-        <main>
-            <div ID ="quizContainer" class="container">
-                <!-- create a div for the question -->
-                <div id=questionContainer>
-                    <div id=question></div>
-                </div>
-                <hr>
-                <!-- create a flexbox div for the answers -->
-                <div id="answerContainer" class="container">
-                    <div id="answer1" class="answer"><button>1.</button></div>
-                    <div id="answer2"class="answer"><button>2.</button></div>
-                    <div id="answer3" class="answer"><button>3.</button></div>
-                    <div id="answer4" class="answer"><button>4.</button></div>
-                </div>
+    <!-- name the game -->
+    <header>
+        <h1>Front End Development Trivia</h1>
+    </header>
+    <button id="startButton" class="hide"> START </button>
+    <!-- create a div for the quiz -->
+    <main>
+        <div ID ="quizContainer" class="container">
+            <!-- create a div for the question -->
+            <div id=questionContainer>
+                <div id=question>test Q text</div>
             </div>
-        </main>
-        <div id="encouragement">Words of encouragement</div>
-        <!-- create a space for the running score and win/los -->
+            <hr>
+            <!-- create a flexbox div for the answers -->
+            <div id="answerContainer" class="container">
+                <button class="answer">1.</button>
+                <button class="answer">2.</button>
+                <button class="answer">3.</button>
+                <button class="answer">4.</button>
+            </div>
+        </div>
         <aside id="scoreContainer" class="container">
                 <div id="score"></div>
                 <div id="totalQuestions"></div>       
             </aside>
-            <script src='./admin.js'></script>
-            <script src="./QandA.js"></script>
-    </div>
+    </main>
+    <!-- <div id="encouragement">Words of encouragement</div> -->
+    <!-- create a space for the running score and win/los -->
+        <script src='./main.js'></script>
+        <script src="./QandA.js"></script>
+        <!-- <window class="onload"></window> -->
 </body>
 </html>
