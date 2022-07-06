@@ -1,40 +1,40 @@
 //When the page loads, only show the start button
-function hide (element){
-    let hidden = element.style.display = 'none';
-    return element;
-}
+// function hide (element){
+//     let hidden = element.style.display = 'none';
+//     return element;
+// }
 
-function hideStartButton(){
-    let hideStart = document.getElementById('startButton');
-    hideStart.addEventListener('click', hide)
-}
+// function hideStartButton(){
+//     let hideStart = document.getElementById('startButton');
+//     hideStart.addEventListener('click', hide)
+// }
 // let displayQuestionText = () => {
 //     let displayQuestion = document.getElementById('question');
 //     displayQuestion.innerHTML = qAndA.question;
 // }
-let displayAnswerText = () => {
-    let displayAnswer = document.getElementById('answer1');
-    displayAnswer = 'answer test text';
+// let displayAnswerText = () => {
+//     let displayAnswer = document.getElementById('answer1');
+//     displayAnswer = 'answer test text';
     
-}
-let displayScore = () => {
-    let runningScore = document.getElementById('score');
-    runningScore.innerHTML = " 0";
-}
-let displayTotal = () => {
-    let numberOfQuestions = document.getElementById('totalQuestions');
-    numberOfQuestions.innerHTML = 10;
-}
+// }
+// let displayScore = () => {
+//     let runningScore = document.getElementById('score');
+//     runningScore.innerHTML = " 0";
+// }
+// let displayTotal = () => {
+//     let numberOfQuestions = document.getElementById('totalQuestions');
+//     numberOfQuestions.innerHTML = 10;
+// }
 
-//test code below//
-let displayQandA = () => {
-    forEach(question, answer1, answer2, answer3, answer4);{
-    for (let i=0; i<listOfQuestions.length; i++){
-        let displayQuestions = qAndA.question[i];
-        }
-}
-}
-console.log(displayQandA)
+// //test code below//
+// let displayQandA = () => {
+//     forEach(question, answer1, answer2, answer3, answer4);{
+//     for (let i=0; i<listOfQuestions.length; i++){
+//         let displayQuestions = qAndA.question[i];
+//         }
+// }
+// }
+// console.log(displayQandA)
 // function startTrivia () => {
 //     hideStartButton();
 //     forEach(question, answer1, answer2, answer3, answer4){
@@ -44,9 +44,9 @@ console.log(displayQandA)
 //     }
 // }
 
-displayTotal()
-displayScore()
-displayAnswerText()
+// displayTotal()
+// displayScore()
+// displayAnswerText()
 // displayQuestionText()
 // startTrivia()
 

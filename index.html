@@ -7,19 +7,18 @@
     <title>Quiz Milestone</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+<!-- name the game -->
+    <h1>Front End Development Trivia</h1>
+
+<button id="startButton"> CLICK TO START </button>
 <body>
-    <!-- name the game -->
-    <header>
-        <h1>Front End Development Trivia</h1>
-    </header>
-    <button id="startButton" class="hide"> START </button>
     <!-- create a div for the quiz -->
-    <main>
+    <main class="hide">
         <div ID ="quizContainer" class="container">
             <!-- create a div for the question -->
             <div id=questionContainer>
-                <div id=question>test Q text</div>
-            </div>
+                <h2 id=question></div>
+                </h2>
             <hr>
             <!-- create a flexbox div for the answers -->
             <div id="answerContainer" class="container">
@@ -29,13 +28,13 @@
                 <button class="answer">4.</button>
             </div>
         </div>
+        <!-- <div id="encouragement">Words of encouragement</div> -->
+        <!-- create a space for the running score and win/los -->
         <aside id="scoreContainer" class="container">
-                <div id="score"></div>
-                <div id="totalQuestions"></div>       
+                <div>Your score<button id="score"></button></div>
+                <div># of Questions<button id="totalQuestions"></button></div>       
             </aside>
     </main>
-    <!-- <div id="encouragement">Words of encouragement</div> -->
-    <!-- create a space for the running score and win/los -->
         <script src='./main.js'></script>
         <script src="./QandA.js"></script>
         <!-- <window class="onload"></window> -->

@@ -33,6 +33,24 @@ div {
     /* padding: .5em;
     margin: .5em; */
 }
+#startButton {
+    background-color:#ffb227;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    min-width: 25vw;
+    min-height: 25vh;
+    color:#134f98;
+    justify-content: center;
+    
+    animation-name: startUp;
+    /* animation-duration: 1.75s; */
+    animation-iteration-count: infinite;
+}
+@keyframes startUp {
+    from {background-color: transparent;}
+    to {background-color: #ffb227;}
+}
 .container, button, div {
     border-radius: 1em;
     min-width: 25vw;
@@ -45,22 +63,6 @@ div {
     font-size: larger;
     color:#134f98;
 } 
-#startButton {
-    background-color:#ffb227;
-    border: none;
-    font-size: 3rem;
-    font-weight: bold;
-    min-width: 25vw;
-    min-height: 25vh;
-    color:#134f98;
-    animation-name: startUp;
-    /* animation-duration: 1.75s; */
-    animation-iteration-count: infinite;
-}
-@keyframes startUp {
-    from {background-color: transparent;}
-    to {background-color: #ffb227;}
-}
 .answer button, button {
     font-weight: bold;
     font-size: medium;
@@ -74,14 +76,14 @@ div {
     background-color: rgb(122, 122, 255);
     /* opacity: .75; */
 } 
-#encouragement {
+/* #encouragement {
     text-align: center;
     font-weight: bold;
     font-size: medium;
     font-stretch: expanded;
     text-transform: uppercase;
     color: rgb(115, 113, 113);
-}
+} */
 aside {
     display: inline-flex;
     justify-content: center;

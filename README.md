@@ -1,3 +1,7 @@
+Reference:
+ I watched this video and it helped me to use the class of hide to show and hide the different elements. https://youtu.be/riDzcEQbX6k
+ 
+
 # Requirements
 ### General Requirements
 
