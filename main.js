@@ -1,5 +1,4 @@
 let startOnClick = document.getElementById('startButton');
-
 let questionDiv = document.getElementById('question');
 let answerDivs = document.getElementsByClassName('answer');
 
@@ -12,14 +11,23 @@ startOnClick.addEventListener('click', startGame=()=>{
     showMainContainer.classList.remove('hide');
     hideStartButton.classList.add('hide');
     addQuestionText()
-    
-    
 }
 )
 
 function addQuestionText(){
-    document.getElementById('question').textContent += 'test';
-}
+    let nextQuestion = document.getElementById('question');
+    let questionText = question.innerText;
+
+    for (let i = 0; i < qAndA.length; i++) {
+        console.log(qAndA[i]);
+        };
+    // nextQuestion.innerText += questionText;
+};
+
+
+
+
+// addQuestionText();
 // if (answer === 'correct') {
     // function correctAnswer () => {//
     // answerDivs.innerText=qAndA.answers;
