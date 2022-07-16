@@ -25,9 +25,14 @@ main{
 border-radius: 1em;
 min-height: 40vh;
 width: 80w;
+margin-bottom: 0%;
 }
 #questionContainer, #answerContainer {
     width: 75vw;
+}
+h1 {
+    margin: 1.5em;
+    font-size: 2.5em;
 }
 div {
     /* padding: .5em;
@@ -36,12 +41,15 @@ div {
 #startButton {
     background-color:#ffb227;
     border: none;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     min-width: 25vw;
     min-height: 25vh;
     color:#134f98;
+    display: inline-flexbox;
     justify-content: center;
+    align-self: center;
+    margin-top: 25vh;
     
     animation-name: startUp;
     /* animation-duration: 1.75s; */
@@ -50,6 +58,11 @@ div {
 @keyframes startUp {
     from {background-color: transparent;}
     to {background-color: #ffb227;}
+}
+#start-screen {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
 }
 .container, button, div {
     border-radius: 1em;
@@ -87,7 +100,10 @@ div {
 aside {
     display: inline-flex;
     justify-content: center;
-    font-size:2em;
+    font-size:1.5em;
+    margin:0;
+    padding: 0.25em;
+
 }
 #score, #totalQuestions{
     max-width: 20vw;
@@ -97,9 +113,5 @@ aside {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: .1;
+    font-size: 2em;
 }
-
-
-/* .dim{
-    opacity: 1.25;
-  } */

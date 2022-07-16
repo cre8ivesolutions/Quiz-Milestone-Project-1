@@ -10,7 +10,7 @@ let qAndA = [
         
       {questions: "this is the second question?", 
         answers : [
-            {text:'this is the second answer', correct: 'true'},
+            {text:'this is the second answer', correct: 'false'},
             {text: "this is also a second answer", correct: 'false'},
             {text: 'this is the correct one', correct: 'true'},
             {text: "this is a second answer",correct: 'false'},]
