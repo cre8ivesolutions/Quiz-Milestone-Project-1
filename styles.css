@@ -71,11 +71,11 @@ div {
     padding: .5em;
     margin: .5em;
 }
-#question{
+/* #question{
     font-weight: bold;
     font-size: larger;
     color:#134f98;
-} 
+}  */
 .answer button, button {
     font-weight: bold;
     font-size: medium;
