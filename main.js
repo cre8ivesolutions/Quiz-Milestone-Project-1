@@ -33,22 +33,18 @@ let qAndA = [
     ]
 
 let startOnClick = document.getElementById('startButton');
-// let questionDiv = document.getElementById('question');
-// let answerDivs = document.getElementsByClassName('answer');
 let clickOnAnswer = document.getElementsByClassName('answer');
 
 startOnClick.addEventListener('click', startGame=()=>{
     let showMainContainer = document.querySelector('main');
     let hideStartButton = document.getElementById('startButton');
-    // let hideStartScreen = document.getElementById('start-screen');
-    
-    // let addQuestion = document.getElementById('question');
+    let hideQuizImage = document.getElementById('quizTime');
+
     
     showMainContainer.classList.remove('hide');
     hideStartButton.classList.add('hide');
+    hideQuizImage.classList.add('hide');
 
-    
-    
     function addQuestionText(){
         const questionElement = document.createElement('h2');
         const questionText = document.createTextNode("questions from array" )

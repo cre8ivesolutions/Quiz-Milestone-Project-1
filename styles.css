@@ -1,11 +1,6 @@
-.answer:hover {
-    background-color: rgb(122, 122, 255);
-} 
 body {
     font-family:Arial, Helvetica, sans-serif;
     display: flexbox;
-    justify-content: center;
-    align-items: center;
     margin: .25em;
     padding: .25em;
     text-align: center;
@@ -18,20 +13,26 @@ body {
 .show {
     display: contents;
 }
+.answer:hover {
+    background-color: rgb(122, 122, 255);
+} 
+#questionContainer, #answerContainer {
+    width: 79vw;
+    display: flexbox;
+    text-align: center;
+    margin-left: 2.5em;
+}
 .encouragement {
     max-width: 150px;
     max-height: 150px;
     border-radius: 1em;
 }
-main{
-    align-items: center;
-}
 #quizContainer{
 min-height: 40vh;
 width: 80w;
 }
-#questionContainer, #answerContainer {
-    width: 75vw;
+#quizTime {
+    filter: saturate(.4);
 }
 h1 {
     font-size: 2.75em;
@@ -46,7 +47,7 @@ h1 {
     display: inline-flexbox;
     justify-content: center;
     align-self: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
     animation-name: startUp;
     animation-duration: 1.9s;
     animation-iteration-count: infinite;
@@ -79,6 +80,7 @@ label {
     color: white;
     padding: .75em;
     width: 75vw;
+    align-self: center;
 }
 #encouragement {
     text-align: center;
