@@ -40,7 +40,8 @@ let clickOnAnswer = document.getElementsByClassName('answer');
 startOnClick.addEventListener('click', startGame=()=>{
     let showMainContainer = document.querySelector('main');
     let hideStartButton = document.getElementById('startButton');
-    let hideStartScreen = document.getElementById('start-screen');
+    // let hideStartScreen = document.getElementById('start-screen');
+    
     // let addQuestion = document.getElementById('question');
     
     showMainContainer.classList.remove('hide');
@@ -54,64 +55,62 @@ startOnClick.addEventListener('click', startGame=()=>{
         questionElement.appendChild(questionText);
         document.getElementById('questionContainer').appendChild(questionElement);
         //the next couple of lines are not working correctly to display the quetions in the array of qAndA.questions 
-        for (let i = 0; i < qAndA.length; i++) {
-            let qText= qAndA.questions[i];
-        };           
+        // for (let i = 0; i < qAndA.length; i++) {
+        //     let qText= qAndA.questions[i];
+        // };           
     };
     addQuestionText();
     
     function addAnswerText(){
-        const answerElement = document.createElement('div');
-        answerElement.className='answerContainer container';
-        const answerText = document.createTextNode("answers from array");
+        let answerElement = document.createElement('button');
+        answerElement.className='answer';
+        let answerText = document.createTextNode("answers from array");
         answerElement.appendChild(answerText);
         document.getElementById('answerContainer').appendChild(answerElement);
     };
-    addAnswerText();
     //the answer txt is not showing up
+    qAndA.forEach(addAnswerText);
+
+    //the below event listener is throwing an error because the 'answer' element for clickOnAnswer is not yet created. fix this with async/await?
+    clickOnAnswer.addEventListener('click', ifCorrect);
+    
+    function ifCorrect(){
+        let correctAnswer = qAndA.group(({type})=> 'correct');
+        if (correctAnswer.correct){
+            let increaseScore = document.getElementById('score');
+            increaseScore.innerHTML ++;
+            let rightElement = document.createElement('div');
+            let rightImage = document.createElement('img');
+            rightImage.src = 'assets/dancing-bear-gif.webp';
+            rightImage.className='encouragement';
+            rightElement.appendChild(rightImage);
+            document.getElementById('encouragement').appendChild(rightElement);
+        } else {
+            let wrongElement = document.createElement('div');
+            let wrongImage = document.createElement('img');
+            wrongImage.src = 'assets/falling1.webp';
+            wrongImage.className='encouragement';
+            wrongElement.appendChild(wrongImage);
+            document.getElementById('encouragement').appendChild(wrongElement);
+            //finish this maybe add sound
+        }; 
+    };
+    
 });
-
-
-function ifCorrect(){
-    let correctAnswer = qAndA.group(({type})=> 'correct');
-    if (correctAnswer.correct){
-        let increaseScore = document.getElementById('score');
-        increaseScore.innerHTML ++;
-        let rightElement = document.createElement('div');
-        let rightImage = document.createElement('img');
-        rightImage.src = 'assets/dancing-bear-gif.webp';
-        rightImage.className='encouragement';
-        rightElement.appendChild(rightImage);
-        document.getElementById('encouragement').appendChild(rightElement);
-    } else {
-        let wrongElement = document.createElement('div');
-        let wrongImage = document.createElement('img');
-        wrongImage.src = 'assets/falling1.webp';
-        wrongImage.className='encouragement';
-        wrongElement.appendChild(wrongImage);
-        document.getElementById('encouragement').appendChild(wrongElement);
-        //finish this maybe add sound
-    }; 
-};
-
-clickOnAnswer.addEventListener('click', ifCorrect);
-
-    function addNextButton(){
-        const nextButton = document.createElement('button');
-        const buttonLabel = document.innerHTML('NEXT');
-        nextButton.appendChild(buttonLabel);
-        document.getElementById('encouragement').appendChild('nextButton');
-    }
-    addNextButton();
+// make the next button show up after the right or wrong answer is clicked
+    // function addNextButton(){
+    //     let nextButton = document.createElement('div');
+    //     let buttonLabel = document.createTextNode('NEXT');
+    //     nextButton.appendChild(buttonLabel);
+    //     document.getElementById('encouragement').appendChild('nextButton');
+    // };
+    // addNextButton();
 
 
     
 
-        // let nextQuestion = document.getElementById('question');
-        // let nextQuestion.innerText="test Text"
-        
-            // nextQuestion.innerText += questionText;
-        
+        // let nextQuestion = document.getElementById('question');       
+        // nextQuestion.innerText += questionText;
         // addQuestionText();
 // if (answer === 'correct') {
     // function correctAnswer () => {//

@@ -9,7 +9,7 @@
 </head>
 <!-- name the game -->
 
-<body onload = >
+<body>
     <header>
         <h1>SOFTWARE DEVELOPMENT TRIVIA</h1>
     </header>
@@ -25,18 +25,20 @@
             <hr>
             <!-- create a flexbox div for the answers -->
             <div id="answerContainer" class="answerContainer container">
+               <!-- I will clean up the code when this is finished -->
                 <!-- <button class="answer">1.</button>
                 <button class="answer">2.</button>
                 <button class="answer">3.</button>
                 <button class="answer">4.</button>  -->
             </div>
         </div>
-        <div id="encouragement"></div>
+        <!-- <hr> -->
         <!-- create a space for the running score and win/los -->
         <aside id="scoreContainer" class="container">
-                <div><label># CORRECT</label><button id="score">0</button></div>
-                <div>TOTAL<button id="totalQuestions">10</button></div>       
-            </aside>
+            <div><label for="score"># CORRECT</label><button id="score">0</button></div>
+            <div><label for="totalQuestions">TOTAL</label><button id="totalQuestions">10</button></div>       
+        </aside>
+        <div id="encouragement"></div>
     </main>
         <script src='./main.js'></script>
         <!-- <script src="./QandA.js"></script> -->

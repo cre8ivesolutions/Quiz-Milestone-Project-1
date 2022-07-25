@@ -1,3 +1,6 @@
+.answer:hover {
+    background-color: rgb(122, 122, 255);
+} 
 body {
     font-family:Arial, Helvetica, sans-serif;
     display: flexbox;
@@ -7,7 +10,7 @@ body {
     padding: .25em;
     text-align: center;
     color: #134f98;
-    max-height: 100vh;
+    max-height: 85vh;
 }
 .hide {
     display: none;
@@ -22,46 +25,38 @@ body {
 }
 main{
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1em;
 }
 #quizContainer{
-border-radius: 1em;
 min-height: 40vh;
 width: 80w;
-margin-bottom: 0%;
 }
 #questionContainer, #answerContainer {
     width: 75vw;
 }
 h1 {
-    margin: 1.5em;
-    font-size: 2.5em;
-}
-div {
-    /* padding: .5em;
-    margin: .5em; */
+    font-size: 2.75em;
 }
 #startButton {
     background-color:#ffb227;
-    /* border: none; */
     font-size: 3.5rem;
     font-weight: bold;
     min-width: 25vw;
     min-height: 25vh;
     color:#134f98;
-    /* display: inline-flexbox; */
-    /* justify-content: center; */
-    /* align-self: center; */
-    margin-top: 25vh;
+    display: inline-flexbox;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20vh;
     animation-name: startUp;
-    /* animation-duration: 1.9s; */
+    animation-duration: 1.9s;
     animation-iteration-count: infinite;
 }
 @keyframes startUp {
     from {background-color: transparent;}
     to {background-color: #ffb227;}
+}
+label {
+    font-size: medium;
 }
 #start-screen {
     display: flex;
@@ -75,47 +70,42 @@ div {
     padding: .5em;
     margin: .5em;
 }
-/* #question{
-    font-weight: bold;
-    font-size: larger;
-    color:#134f98;
-}  */
 .answer button, button {
     font-weight: bold;
     font-size: medium;
+    flex-wrap: wrap;
     border: none;
     background-color:#134f98;
     color: white;
     padding: .75em;
     width: 75vw;
 }
-.answer :hover {
-    background-color: rgb(122, 122, 255);
-    /* opacity: .75; */
-} 
-/* #encouragement {
+#encouragement {
     text-align: center;
     font-weight: bold;
     font-size: medium;
     font-stretch: expanded;
     text-transform: uppercase;
     color: rgb(115, 113, 113);
-} */
+}
 aside {
     display: inline-flex;
     justify-content: center;
-    font-size:1.5em;
+    align-self: flex-end;
     margin:0;
     padding: 0.25em;
 
 }
 #score, #totalQuestions{
     max-width: 20vw;
-    min-width: 8vw;
+    min-width: 7vw;
     background-color:#134f98;
     color: white;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: .1;
     font-size: 2em;
+    padding: .1;
+    align-self: center;
+    text-align: center;
 }
