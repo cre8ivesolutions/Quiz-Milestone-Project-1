@@ -8,39 +8,30 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <!-- name the game -->
-
 <body>
     <header>
         <h1>SOFTWARE DEVELOPMENT TRIVIA</h1>
         <br>
-        <img id=quizTime src="./assets/quiz-background.webp" alt="quiz time gif" width="500px">
+        <img id=quizTime src="./assets/quiz-background.webp" alt="quiz time gif" width="350px">
     </header>
     <button id="startButton"> CLICK TO START </button>
     <!-- create a div for the quiz -->
     <main class="hide">
         <div ID ="quizContainer" class="container">
             <!-- create a div for the question -->
-            <div id=questionContainer>
-                <!-- <h2 id=question>
-                </h2> -->
-            </div>
+            <div id=questionContainer></div>
             <hr>
+            <div id="encouragement"></div>
             <!-- create a flexbox div for the answers -->
-            <div id="answerContainer" class="answerContainer container">
-               <!-- I will clean up the code when this is finished -->
-                <!-- <button class="answer">1.</button>
-                <button class="answer">2.</button>
-                <button class="answer">3.</button>
-                <button class="answer">4.</button>  -->
-            </div>
+            <div id="answerContainer"></div>
+
+            <div id="nextDiv" class="container"></div>
         </div>
-        <!-- <hr> -->
-        <!-- create a space for the running score and win/los -->
-        <aside id="scoreContainer" class="container">
-            <div><label for="score"># CORRECT</label><button id="score">0</button></div>
-            <div><label for="totalQuestions">TOTAL</label><button id="totalQuestions">10</button></div>       
+            <!-- create a space for the running score and win/los -->
+            <aside id="scoreContainer" class="container">
+                <div class="score"><p># CORRECT</p><button id="score">0</button></div>
+            <div class="score"><p>TOTAL</p></label><button id="totalQuestions">10</button></div>       
         </aside>
-        <div id="encouragement"></div>
     </main>
         <script src='./main.js'></script>
         <!-- <script src="./QandA.js"></script> -->
