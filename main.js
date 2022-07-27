@@ -49,31 +49,23 @@ let qAndA = [
         hideQuizImage.classList.add('hide');
         encourage.classList.add('hide');
         
+
+
         function addQuestionText(){
-            // let qText   
             let questionElement = document.createElement('h2');
-            let qText = questionText;
-            let questionText = document.createTextNode("questions from array" )
-            
             questionElement.appendChild(questionText);
             document.getElementById('questionContainer').appendChild(questionElement);
-            Array.from(qAndA.q).forEach(q=> {
-                document.createTextNode = qText
-            })
-            //7/27 2 pm
+            let qText = questionText;
+            Array.from(qAndA.q).forEach(q => {
+                qText
+                });
+            // let questionText = document.createTextNode("questions from array" )
             //the next couple of lines are not working correctly to display the quetions in the array of qAndA.questions 
-    
-    
-        let text = "";
-        for (let i = 0; i < qAndA.length; i++) {
-            text += i
-            console.log(i)       
-        };    
-        let qText = qAndA.toString((quesT) => {
-            return qAndA.question
-        })
+               for (let i = 0; i < qAndA.length; i++) {
+                    i
+                console.log(i)       
+                };    
         console.log(qText)
-
     };
     addQuestionText();
     
