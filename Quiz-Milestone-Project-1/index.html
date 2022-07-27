@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Milestone</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<!-- name the game -->
+<body>
+    <header>
+        <h1>SOFTWARE DEVELOPMENT TRIVIA</h1>
+        <br>
+        <img id=quizTime src="./assets/quiz-background.webp" alt="quiz time gif" width="350px">
+    </header>
+    <button id="startButton"> CLICK TO START </button>
+    <!-- create a div for the quiz -->
+    <main class="hide">
+        <div ID ="quizContainer" class="container">
+            <!-- create a div for the question -->
+            <div id=questionContainer></div>
+            <hr>
+            <div id="encouragement"></div>
+            <!-- create a flexbox div for the answers -->
+            <div id="answerContainer"></div>
+
+            <div id="nextDiv" class="container"></div>
+        </div>
+            <!-- create a space for the running score and win/los -->
+            <aside id="scoreContainer" class="container">
+                <div class="score"><p># CORRECT</p><button id="score">0</button></div>
+            <div class="score"><p>TOTAL</p></label><button id="totalQuestions">10</button></div>       
+        </aside>
+    </main>
+        <script src='./main.js'></script>
+        <!-- <script src="./QandA.js"></script> -->
+        <!-- <window class="onload"></window> -->
+</body>
+</html>
