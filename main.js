@@ -31,10 +31,6 @@ let qAndA = [
             {d: "an element can only have one class", type: 'incorrect'},]
         },
     ]
-    
-    
-    
-    
     let startOnClick = document.getElementById('startButton');
     let clickOnAnswer = document.getElementsByClassName('answer');
     let encourage = document.getElementById('encouragement');
@@ -50,30 +46,21 @@ let qAndA = [
         encourage.classList.add('hide');
         
 
-
+// 7/27 5 pm fix the below code
         function addQuestionText(){
             let questionElement = document.createElement('h2');
-            questionElement.appendChild(questionText);
+            let qText = qAndA.q;
             document.getElementById('questionContainer').appendChild(questionElement);
-            let qText = questionText;
-            Array.from(qAndA.q).forEach(q => {
-                qText
-                });
-            // let questionText = document.createTextNode("questions from array" )
+            questionElement.appendChild(qText);
             //the next couple of lines are not working correctly to display the quetions in the array of qAndA.questions 
                for (let i = 0; i < qAndA.length; i++) {
                     i
                 console.log(i)       
                 };    
         console.log(qText)
-    };
+            };
     addQuestionText();
     
-
-
-
-
-
     function addAnswerText(){
         let answerElement = document.createElement('button');
         answerElement.className='answer';
