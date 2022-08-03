@@ -14,8 +14,8 @@ h1 {
     margin: .5;
     text-shadow: 2px 2px 5px  #ffb227;
 }
-#quizContainer, #questionContainer, #answerContainer {
-}
+/* #quizContainer, #questionContainer, #answerContainer {
+} */
 #scoreContainer {
     margin-top: 1em;
 }
@@ -107,8 +107,8 @@ p {
 .answer:hover {
     background-color: rgb(122, 122, 255);
 } 
-.score {
-}
+/* .score {
+} */
 .next-btn {
     background-color: #ffb227;
     color: #134f98;
