@@ -1,6 +1,6 @@
 let qAndA = [
     {
-        questions: "What data type is most useful for holding data in text form?",
+        questions: "What data type is most useful for holding data in text form??",
         answers: [
             {a: 'array', type: 'incorrect'},
             {b: 'object', type: 'incorrect'},
