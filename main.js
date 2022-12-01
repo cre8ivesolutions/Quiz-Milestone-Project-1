@@ -46,8 +46,6 @@ let startButton = document.getElementById("startButton");
 let clickOnAnswer = document.getElementsByClassName("answer");
 let encourage = document.getElementById("encouragement");
 
-let tID = 1;
-const currentQ = qAndA.find((t) => t.id === tID);
 // console.log(currentQ);
 
 startButton.addEventListener(
@@ -66,31 +64,45 @@ startButton.addEventListener(
 );
 
 function addQuestionText() {
+  let tID = 1;
+  const currentQ = qAndA.find((t) => t.id === tID);
+
   let questionElement = document.createElement("h2");
   let qText = currentQ.q;
   questionElement.innerHTML = qText;
   document.getElementById("questionContainer").appendChild(questionElement);
-  
   //fix below 8/2/22 1130 pm
-  function addAnswerText() {
-    let answerElement = document.createElement("h3");
-    qAndA.answers.forEach()
-
-    
-    let aText = currentQ.answers;
+  function addAnswers() {
+    let tID = 1;
+    const currentQ = qAndA.find((t) => t.id === tID);
+    console.log(currentQ)
+    let questionElement = document.createElement("h2");
+    let qText = currentQ.q;
     questionElement.innerHTML = qText;
     document.getElementById("questionContainer").appendChild(questionElement);
-      for (t = 0; t < currentQ.answers.length; t++) {
-          let aText = currentQ.answers;
-          let answerElement = document.createElement("button");
-          
-          // currentQ.answers.forEach((answer, t) => answer.answerElement.innerHTML(answer));
-          // answerElement.className = 'answer';
-          document.getElementById("answerContainer").appendChild(answerElement);
-          currentQ.answers.forEach((answer) =>
-          document.getElementById("button").innerHTML(answer)
-          );
-    }
+    // let answerElement = document.createElement("h3");
+    // let tID = 1;
+    // const currentQ = qAndA.find((t) => t.id === tID);
+    // console.log(currentQ)
+    // let aText = currentQ.answers;
+    // answerElement.innterHTML = aText;
+    // currentQ.answers.forEach(
+    //   document.getElementById("answerContainer").appendChild(answerElement)
+    // );
+
+    // questionElement.innerHTML = qText;
+    // document.getElementById("questionContainer").appendChild(questionElement);
+    // for (t = 0; t < currentQ.answers.length; t++) {
+    //   let aText = currentQ.answers;
+    //   let answerElement = document.createElement("button");
+
+    //   // currentQ.answers.forEach((answer, t) => answer.answerElement.innerHTML(answer));
+    //   // answerElement.className = 'answer';
+    //   document.getElementById("answerContainer").appendChild(answerElement);
+    //   currentQ.answers.forEach((answer) =>
+    //     document.getElementById("button").innerHTML(answer)
+    //   );
+    // }
   }
 }
 
