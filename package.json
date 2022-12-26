@@ -1,0 +1,24 @@
+{
+  "name": "quiz-milestone-project-1",
+  "version": "1.0.0",
+  "description": "Reference:\r  I watched this video and it helped me to use the class of hide to show and hide the different elements. https://youtu.be/riDzcEQbX6k",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cre8ivesolutions/Quiz-Milestone-Project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cre8ivesolutions/Quiz-Milestone-Project-1/issues"
+  },
+  "homepage": "https://github.com/cre8ivesolutions/Quiz-Milestone-Project-1#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "start": "^5.1.0"
+  }
+}
